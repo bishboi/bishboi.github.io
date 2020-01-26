@@ -1,0 +1,319 @@
+* {
+    box-sizing:border-box;
+    color: white;
+}
+@font-face {
+    font-family: font1;
+    src: url(../img/font3.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(../img/font1.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(../img/font7.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(../img/font7.ttf);
+}
+
+html { font-size: 62.5%; }
+a,b {
+    font-family: font2;
+}
+
+.header {
+    background-color: #696969;
+    padding: 30px;
+    text-align: center;
+}
+.header heading{
+    text-align: center;
+    font-family: font3;
+    font-size: 45px;
+    color: #f5f5f5; text-shadow: 0px 1px 2px #f1f1f1;
+}
+p, showbig, showsmall {
+    padding: 5px 5px;
+    color:white;
+    font-family: font1;
+}
+#footer {
+    background-color: #696969;
+    text-align: center;
+    font-family: font2;
+    font-size: 35px;
+    color: #f5f5f5; text-shadow: 0px 1px 2px #f1f1f1;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+@media (max-width: 300px) {
+    html { font-size: 70%;}
+    showsmall {display:block;
+        font-size: 30px;}
+    showbig {display:none;}
+    a,b { font-size: 200%;
+        padding: 5px 5px;}
+    .fa {
+            font-size:30px !important;
+        }
+}
+
+@media (min-width: 300px) {
+    html { font-size: 70%;}
+    showsmall {display:block;
+        font-size: 30px;}
+    showbig {display:none;}
+    a,b { font-size: 200%;
+        padding: 5px 5px;}
+    .fa {
+            font-size:28px !important;
+        }
+}
+
+@media (min-width: 400px) {
+    html { font-size: 80%;}
+    showsmall {display:block;
+        font-size: 35px;}
+    showbig {display:none;}
+    a,b { font-size: 150%;
+        padding: 5px 5px;}
+    .fa {
+            font-size:48px !important;
+    }
+}
+
+@media (min-width: 600px) {
+    html { font-size: 120%;}
+    showsmall {display:block;
+                font-size: 40px;}
+    showbig {display:none;
+            font-size: 20px;}    
+    a,b { font-size: 110%;
+        padding: 7px 7px;}
+    p1,h3 {font-size: 65%;}
+    .fa {
+        font-size:60px !important;
+    }
+}
+
+@media (min-width: 800px) {
+    html { font-size: 180%;}
+    .left{ width:45%;}
+    .right{ width:45%;}
+    showsmall {display:none;}
+    showbig {display:block;
+            font-size: 30px;}
+    a,b { font-size: 70%;
+        padding: 10px 11px;}
+    p1,h3 {font-size: 70%;}
+    .fa {
+        font-size:80px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    html { font-size: 180%;}
+    .left{ width:45%;}
+    .right{ width:45%;}
+    showsmall {display:none;}
+    showbig {display:block;
+            font-size: 35px;}
+    p1,h3 { font-size: 80%;}
+    a,b { font-size: 70%;
+        padding: 10px 11px;}
+    .fa {
+            font-size:100px !important;
+        }
+}
+@media (min-width: 1200px) {
+    html { font-size: 180%;}
+    .left{ width:41%;}
+    .right{ width:41%;}
+    showsmall {display:none;}
+    showbig {display:block;
+            font-size:50px;}
+    p1,h3 {font-size: 80%;}
+    a,b { font-size: 70%;
+        padding: 6px 12px;}
+    .fa {
+            font-size:100px !important;
+        }
+}
+
+@media (min-width: 1400px) {
+    html { font-size: 180%;}
+    .left{ width:45%;}
+    .right{ width:45%;}
+    showsmall {display:none;}
+    showbig {display:block;
+            font-size:55px;}
+    a,b { font-size: 100%;
+        padding: 6px 12px;}
+    .fa {
+            font-size:100px !important;
+        }
+}
+i { 
+    text-shadow: 1px 2px 3px darkgray;
+} 
+body {
+        background-color: black;
+        font-size: 1em;
+    margin: 0;
+}
+ 
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  #navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  #navbar b {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+.left {
+    background-color:transparent; 
+    padding: 1%;
+    float: left;
+}  
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.right {
+    padding-top: 10%;
+    background-color:transparent; 
+    float: right;
+}
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.rightbutt {
+    float: right;
+}
+.rightup {
+    background-color:transparent;
+    width: 55%;
+    float: right;
+    padding-top: 20%;
+}
+.rightup showbig {
+    text-align: center;
+}
+.leftup {
+    background-color:transparent;
+    width: 55%;
+    float: left;
+    padding-top: 15%;
+}
+.leftup showbig {
+    text-align: center;
+}
+
+.grow {
+    overflow: hidden;
+    float:center;
+}
+.grow2 {
+    overflow: show;
+    float:center;
+}
+
+.grow p {font-family: font4;
+        font-size: 70%;
+        text-shadow: 0px 1px 2px #f1f1f1;}
+.grow p:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
+}
+.grow2 i:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all .3s ease-in-out;
+}
+.fa-instagram:hover {
+    color:#DD2A7B;
+    transition: all .3s ease-in-out;
+}
+
+.fa-facebook:hover {
+    color:#3b5998;
+    transition: all .3s ease-in-out;
+}
+.fa-twitter:hover {
+    color:#00acee;
+    transition: all .3s ease-in-out;
+}
+.fa-git:hover {
+    color:#211F1F;
+    transition: all .3s ease-in-out;
+}
+
+.fa-envelope:hover {
+    color:#d44638;
+    transition: all .3s ease-in-out;
+}
+
+.grow2 i {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0%;
+}
+
+p1,h3 {
+    font-family: font3;
+    color: black;
+    font-size: 100%;
+}
+#map { 
+    width: 100%; 
+    height: 100%; 
+    background-color: grey; 
+}
