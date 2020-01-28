@@ -2,6 +2,7 @@
     box-sizing:border-box;
     color: white;
 }
+/* adding fonts */
 @font-face {
     font-family: font1;
     src: url(../img/font3.ttf);
@@ -24,30 +25,19 @@ a,b {
     font-family: font2;
 }
 
-.header {
-    background-color: #343a40;
-    padding: 30px;
-    text-align: center;
-}
-.header heading{
-    text-align: center;
-    font-family: font3;
-    font-size: 45px;
-    color: white; text-shadow: 3px 3px 2px black;
-}
 p, showbig, showsmall {
     padding: 5px 5px;
     color:white;
     font-family: font1;
 }
-#footer {
-    background-color: #343a40;
-    text-align: center;
-    font-family: font2;
-    color: #f5f5f5; text-shadow: 0px 1px 2px #f1f1f1;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
+
+i { 
+    text-shadow: 1px 2px 3px darkgray;
+} 
+body {
+        background-color: black;
+        font-size: 1em;
+    margin: 0;
 }
 
 @media (max-width: 300px) {
@@ -164,15 +154,30 @@ p, showbig, showsmall {
             font-size:100px !important;}
     #footer {font-size: 35px;}
 }
-i { 
-    text-shadow: 1px 2px 3px darkgray;
-} 
-body {
-        background-color: black;
-        font-size: 1em;
-    margin: 0;
-}
  
+.header {
+    background-color: #343a40;
+    padding: 30px;
+    text-align: center;
+}
+.header heading{
+    text-align: center;
+    font-family: font3;
+    font-size: 45px;
+    color: white; text-shadow: 3px 3px 2px black;
+}
+
+#footer {
+    background-color: #343a40;
+    text-align: center;
+    font-family: font2;
+    color: #f5f5f5; text-shadow: 0px 1px 2px #f1f1f1;
+    height: 100px;
+    margin-top: -100px;
+    clear: both;
+}
+
+
 #navbar {
     overflow: hidden;
     background-color: #1f1f1f;
@@ -202,24 +207,26 @@ body {
     color: white;
   }
   
-  .content {
+.content {
     padding: 16px;
-  }
+}
   
-  .sticky {
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
   
-  .sticky + .content {
+.sticky + .content {
     padding-top: 60px;
-  }
+}
+
 .left {
     background-color:transparent; 
     padding: 1%;
     float: left;
 }  
+
 .left img {
     width: 100%;
     height: 100%;
@@ -242,29 +249,35 @@ body {
 .rightbutt {
     float: right;
 }
+
 .rightup {
     background-color:transparent;
     width: 55%;
     float: right;
     padding-top: 20%;
 }
+
 .rightup showbig {
     text-align: center;
 }
+
 .leftup {
     background-color:transparent;
     width: 55%;
     float: left;
     padding-top: 15%;
 }
+
 .leftup showbig {
     text-align: center;
 }
+
 
 .grow {
     overflow: hidden;
     float:center;
 }
+
 .grow2 {
     overflow: show;
     float:center;
@@ -318,8 +331,83 @@ p1,h3 {
     color: black;
     font-size: 100%;
 }
-#map { 
-    width: 100%; 
-    height: 100%; 
-    background-color: grey; 
+
+
+/*
+-------------------------------------------------------------------------------------------------------------------------- 
+Spinner 
+or Pre Loader 
+------------------------------------------------------------------------------------------------------------------------------------------- 
+*/
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 999999;
 }
+.spinner {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+/* 
+---------------------------------------------------------------------------------------------------------------------
+closed
+Spinner 
+or Pre Loader 
+------------------------------------------------------------------------------------------------------------------------------------------- 
+*/
+
+
