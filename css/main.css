@@ -183,24 +183,23 @@ body {
     background-color: #1f1f1f;
 }
   
-  #navbar a {
+#navbar a {
     float: right;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-  }
-  #navbar b {
+}
+#navbar b {
     float: left;
     display: block;
     color: white;
     text-align: center;
     text-decoration: none;
-  }
-  #navbar a:hover {
-    background-color: white;
-    color: black;
-  }
+}
+#navbar a:hover {
+    color: #696969;
+}
   
   #navbar a.active {
     background-color: #696969;
