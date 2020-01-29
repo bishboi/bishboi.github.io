@@ -13,12 +13,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
     }
 }
-$(document).ready(function() {
-function hidePreloader() {
-    //Preloader
-    preloaderFadeOutTime = 1000;
-    var preloader = $('.spinner-wrapper');
-    preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
+$(window).on('load',function() {
+    // Animate loader off screen
+    $(".spinner-wrapper").fadeOut("slow");;
 });
