@@ -25,13 +25,13 @@ a,b {
 p, showbig, showsmall {
     padding: 5px 5px;
     color:white;
-    font-family: font1;
+    font-family: 'Indie Flower', cursive;
 }
  
 body {
         background-color: black;
         font-size: 1em;
-    margin: 0;
+        margin: 0;
 }
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -102,7 +102,7 @@ Responsive Media Elements
     .right{ width:45%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size: 30px;}
+            font-size: 25px;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
     p1,h3 {font-size: 70%;}
@@ -118,7 +118,7 @@ Responsive Media Elements
     .right{ width:45%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size: 35px;}
+            font-size: 30px;}
     p1,h3 { font-size: 80%;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
@@ -133,7 +133,7 @@ Responsive Media Elements
     .right{ width:41%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size:50px;}
+            font-size:32px;}
     p1,h3 {font-size: 80%;}
     a,b { font-size: 70%;
         padding: 6px 12px;}
@@ -149,7 +149,7 @@ Responsive Media Elements
     .right{ width:45%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size:55px;}
+            font-size:40px;}
     a,b { font-size: 100%;
         padding: 6px 12px;}
     .fa {
@@ -624,3 +624,86 @@ p3 {
 p4 {
     float:right;
 }
+
+/*---------------------------------------]
+terminal
+------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+
+
+.header-terminal {
+    background: linear-gradient(#1f1f1f , #27292c);
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    border-bottom: 2px solid;
+    border-color: black;
+    padding: 10px;
+}
+
+.dot {
+    position: absolute;
+    top: 35%;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.red {
+    margin-left: 10px;
+    background: #fc625d;
+}
+
+.yellow {
+    margin-left: 30px;
+    background: #fdbc40;
+}
+
+.green {
+    margin-left: 50px;
+    background: #33c748;
+}
+
+.panel {
+    border-radius: 10px 10px 10px 10px;
+    width: 100%;
+    height: 70vh;
+    background: #27292c;
+    padding: 0px;
+    overflow-y: scroll;
+    margin: 0px;
+}
+
+.action {
+    margin-bottom: 10px;
+}
+
+.command {
+    width: 100%;
+    height: 20px;
+    background: #27292c;
+    color: #c86762;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 90%;
+    background: #27292c;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+.output {
+    color: white;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+/*-------------------------
