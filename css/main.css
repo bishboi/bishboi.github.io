@@ -42,7 +42,7 @@ Responsive Media Elements
 @media (max-width: 300px) {
     html { font-size: 70%;}
     showsmall {display:block;
-        font-size: 30px;}
+        font-size: 15px;}
     showbig {display:none;}
     a,b { font-size: 200%;
         padding: 5px 5px;}
@@ -55,7 +55,7 @@ Responsive Media Elements
 @media (min-width: 300px) {
     html { font-size: 70%;}
     showsmall {display:block;
-        font-size: 30px;}
+        font-size: 17px;}
     showbig {display:none;}
     a,b { font-size: 200%;
         padding: 5px 5px;}
@@ -69,7 +69,7 @@ Responsive Media Elements
 @media (min-width: 400px) {
     html { font-size: 80%;}
     showsmall {display:block;
-        font-size: 35px;}
+        font-size: 20px;}
     showbig {display:none;}
     a,b { font-size: 150%;
         padding: 5px 5px;}
@@ -83,7 +83,7 @@ Responsive Media Elements
 @media (min-width: 600px) {
     html { font-size: 120%;}
     showsmall {display:block;
-                font-size: 40px;}
+                font-size: 22px;}
     showbig {display:none;
             font-size: 20px;}    
     a,b { font-size: 110%;
@@ -102,7 +102,7 @@ Responsive Media Elements
     .right{ width:45%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size: 25px;}
+            font-size: 23px;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
     p1,h3 {font-size: 70%;}
@@ -133,7 +133,7 @@ Responsive Media Elements
     .right{ width:41%;}
     showsmall {display:none;}
     showbig {display:block;
-            font-size:32px;}
+            font-size:31px;}
     p1,h3 {font-size: 80%;}
     a,b { font-size: 70%;
         padding: 6px 12px;}
@@ -168,8 +168,8 @@ Header
 */
  
 .header {
-    background-color: #343a40;
     padding: 30px;
+    background-color: #30353b;
     text-align: center;
 }
 /*
@@ -185,7 +185,7 @@ Navbar
 
 #navbar {
     overflow: hidden;
-    background-color: #1f1f1f;
+    background-image: linear-gradient(0deg, #1f1f1f 0%, #27292c  74%);
 }
   
 #navbar a {
@@ -206,8 +206,8 @@ Navbar
     color: #696969;
 }
   
-  #navbar a.active {
-    background-color: #696969;
+#navbar a.active {
+    background-color: #414141;
     color: white;
   }
 
@@ -352,7 +352,7 @@ Hover animaion
     transition: all .3s ease-in-out;
 }
 .fa-instagram:hover {
-    color:#DD2A7B;
+    color: #d6249f;
     transition: all .3s ease-in-out;
 }
 
@@ -497,7 +497,7 @@ Footer
 */
 
 #footer {
-    background-color: #343a40;
+    background-color: #30353b;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     color: white;
@@ -513,7 +513,7 @@ Footer Closed
     --eye-size:8rem;
     --eye-gap:7rem;
     --eye-color:white;
-    --background:#343a40;
+    --background:#30353b;
     --user-button-main:#D770AD;
   }
   
@@ -669,9 +669,9 @@ terminal
 .panel {
     border-radius: 10px 10px 10px 10px;
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     background: #27292c;
-    padding: 0px;
+    padding-top: 0px;
     overflow-y: scroll;
     margin: 0px;
 }
