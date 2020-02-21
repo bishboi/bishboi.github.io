@@ -20,16 +20,13 @@
 
 
 html { font-size: 62.5%; }
-#navbar a,b {
-    font-family: font2;
-}
 
 p, showbig, showsmall {
     padding: 5px 5px;
     color:white;
     font-family: 'Indie Flower', cursive;
 }
- 
+a {text-decoration: none;}
 body {
         background-color: black;
         font-size: 1em;
@@ -48,6 +45,9 @@ Responsive Media Elements
     showbig {display:none;}
     a,b { font-size: 200%;
         padding: 5px 5px;}
+    .demo a{
+            left: 30%;
+        }
     .fa {
             font-size:30px !important;
         }
@@ -64,6 +64,9 @@ Responsive Media Elements
     .fa {
             font-size:28px !important;
         }
+        .demo a{
+            left: 35%;
+        }
         #footer {font-size: 22px;}
         .grow p { font-size: 40%;}
     }
@@ -75,7 +78,10 @@ Responsive Media Elements
     showbig {display:none;}
     a,b { font-size: 150%;
         padding: 5px 5px;}
-    .fa {
+    .demo a{
+            left: 39%;
+        }
+        .fa {
             font-size:48px !important;
     }
     #footer {font-size: 25px;}
@@ -91,6 +97,9 @@ Responsive Media Elements
     a,b { font-size: 110%;
         padding: 7px 7px;}
     p1,h3 {font-size: 65%;}
+    .demo a{
+        left: 41%;
+    }
     .fa {
         font-size:60px !important;
     }
@@ -108,6 +117,9 @@ Responsive Media Elements
     a,b { font-size: 70%;
         padding: 10px 11px;}
     p1,h3 {font-size: 70%;}
+    .demo a{
+        left: 43%;
+    }
     .fa {
         font-size:80px !important;
     }
@@ -124,6 +136,9 @@ Responsive Media Elements
     p1,h3 { font-size: 80%;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
+    .demo a{
+            left: 45%;
+        }
     .fa {
             font-size:100px !important;
         }
@@ -142,7 +157,10 @@ Responsive Media Elements
     .fa {
             font-size:100px !important;
         }
-        #footer {font-size: 35px;}
+    .demo a{
+            left: 48%;
+        }
+            #footer {font-size: 35px;}
 }
 
 @media (min-width: 1400px) {
@@ -156,6 +174,9 @@ Responsive Media Elements
         padding: 6px 12px;}
     .fa {
             font-size:100px !important;}
+    .demo a{
+        left: 48%;
+    }
     #footer {font-size: 35px;}
 }
 /*
@@ -179,6 +200,7 @@ Navbar
 }
   
 #navbar a {
+    font-family: 'Raleway', sans-serif;
     float: right;
     display: block;
     color: white;
@@ -186,6 +208,7 @@ Navbar
     text-decoration: none;
 }
 #navbar b {
+    font-family: font2;
     float: left;
     display: block;
     color: white;
@@ -318,17 +341,16 @@ Hover animaion
 }
 
 .grow p {
-        text-shadow: 0px 1px 2px #f1f1f1;
-        font-family: font3;
+        font-family: 'Raleway', sans-serif;
+        color: #696969;
     }
 .grow p:hover {
+    color: #64dcdc;
     cursor: pointer;
-    transform: scale(1.5);
     transition: all .3s ease-in-out;
 }
 .grow2 i:hover {
     cursor: pointer;
-    transform: scale(1.5);
     transition: all .3s ease-in-out;
 }
 .fa-instagram:hover {
@@ -961,7 +983,6 @@ skew to change the 'thickness' of the glitch.*/
 .demo a {
     position: absolute;
     bottom: 20px;
-    left: 50%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
