@@ -28,44 +28,26 @@ Page Pre-Loader
 <!-- 
 Header With Animation 
 -->
-<div class="header">
-    <h1>Hi! I am 
-        <span
-           class="txt-rotate"
-           data-period="2000"
-           data-rotate='[ "Nikhil Bishnoi.", "a Programmer.", "a College Student.", "fun!" ]'></span>
-      </h1>
-    <h2>You are welcome to my site.</h2>    
+<div id="app">
+    <div id="navbar" >
+        <b>Bishnoi</b>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a class="active" href="javascript:void(0)">Home</a>
+    </div>
+    <div id="wrapper">
+        <!-- Make sure data-text equals the text you put inside the tags. -->
+        <h1 class="glitch" data-text="Nikhil Bishnoi">Nikhil Bishnoi</h1>
+        <span class="sub">WELCOME TO MY SITE</span>
+    </div>
 </div>
 <!------------------------------------------------------------------------------->
 <!-- 
 Sticky Navigation Bar 
 -->
-<div id="navbar" >
-    <b>Bishnoi</b>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-    <a class="active" href="javascript:void(0)">Home</a>
-</div>
 
 <!------------------------------------------------------------------------------->
-<div class="container-fluid p-0 my-4">
-    <div class="panel">
-        <div class="header-terminal">
-            <div class="dot red"></div>
-            <div class="dot yellow"></div>
-            <div class="dot green"></div>
-            <div style="text-align: center; font-size: 15px;   font-family: 'Lato', sans-serif; color: #888;">guest@nikhil : ~</div>
-        </div>
-        <div class="action">
-            <div class="command"><span class="symbol" style="color: #8dd39e;">➜ </span><span class="symbol" style="color: #07a;">~</span>
-            <input class="in" type="text" placeholder="help" autofocus=""/>
-            </div>
-            <div class="output"></div>
-        </div>
-    </div>
-    </div>
-    <!-- 
+<!-- 
 Home Page Content 
 -->
 <div class="left">
@@ -96,7 +78,23 @@ Home Page Content
     </showbig>
 </div>
 <!------------------------------------------------------------------------------------------------------------->
-
+<div class="container-fluid p-0 my-4">
+    <div class="panel">
+        <div class="header-terminal">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <div style="text-align: center; font-size: 15px;   font-family: 'Lato', sans-serif; color: #888;">guest@nikhil : ~</div>
+        </div>
+        <div class="action">
+            <div class="command"><span class="symbol" style="color: #8dd39e;">➜ </span><span class="symbol" style="color: #07a;">~</span>
+            <input class="in" type="text" placeholder="help" />
+            </div>
+            <div class="output"></div>
+        </div>
+    </div>
+    </div>
+    
 <!-- 
 Footer
 -->

@@ -15,6 +15,8 @@
     font-family: font1;
     src: url(../img/font3.ttf);
 }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 
 html { font-size: 62.5%; }
@@ -161,22 +163,8 @@ Responsive Media Elements
 Responsive Media Elements 
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
 */
-/*
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-Header 
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-*/
- 
-.header {
-    padding: 30px;
-    background-color: #30353b;
-    text-align: center;
-}
-/*
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-Header Closed 
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-*/
+
+
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
 Navbar 
@@ -184,8 +172,10 @@ Navbar
 */
 
 #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
     overflow: hidden;
-    background-image: linear-gradient(0deg, #1f1f1f 0%, #27292c  74%);
 }
   
 #navbar a {
@@ -207,23 +197,13 @@ Navbar
 }
   
 #navbar a.active {
-    background-color: #414141;
     color: white;
-  }
+}
 
 .content {
     padding: 16px;
 }
-  
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-  
-.sticky + .content {
-    padding-top: 60px;
-}
+
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
 Navbar Closed
@@ -469,26 +449,6 @@ Spinner
 or Pre Loader 
 ------------------------------------------------------------------------------------------------------------------------------------------- 
 */
-/* 
----------------------------------------------------------------------------------------------------------------------
-Animation
-------------------------------------------------------------------------------------------------------------------------------------------- 
-*/
-h1,h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 200;
-    margin: 0.3em 0;
-  }
-  h1 { font-size: 2.5em; }
-  h2 {
-    color: #888;
-    font-size: 1.7em;
-  }
-/* 
----------------------------------------------------------------------------------------------------------------------
-Animation Closed
-------------------------------------------------------------------------------------------------------------------------------------------- 
-*/
 
 /*
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
@@ -628,8 +588,6 @@ p4 {
 /*---------------------------------------]
 terminal
 ------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-
 
 .header-terminal {
     background: linear-gradient(#1f1f1f , #27292c);
@@ -706,4 +664,317 @@ input[type="text"] {
     margin-top: 5px;
     margin-left: 12px;
 }
-/*-------------------------
+/*-------------------------*/
+
+
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  background: #0a0a0a;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(0, 0, 0, 0.9)), repeating-linear-gradient(0, transparent, transparent 2px, black 3px, black 3px), url("../img/test.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+.sub {
+  color: #64dcdc;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1em;
+}
+
+/* Our mixin positions a copy of our text
+directly on our existing text, while
+also setting content to the appropriate
+text set in the data-text attribute. */
+.glitch {
+  position: relative;
+  color: white;
+  font-size: 4em;
+  letter-spacing: 0.5em;
+  /* Animation provies a slight random skew. Check bottom of doc
+  for more information on how to random skew. */
+  animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: 2px;
+  text-shadow: -2px 0 #ff00c1;
+  /* Creates an initial clip for our glitch. This works in
+  a typical top,right,bottom,left fashion and creates a mask
+  to only show a certain part of the glitch at a time. */
+  clip: rect(44px, 450px, 56px, 0);
+  /* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
+  with an alternating animation to keep things fresh. */
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+/* Creates an animation with 20 steaps. For each step, it calculates 
+a percentage for the specific step. It then generates a random clip
+box to be used for the random glitch effect. Also adds a very subtle
+skew to change the 'thickness' of the glitch.*/
+@keyframes glitch-anim {
+  0% {
+    clip: rect(35px, 9999px, 45px, 0);
+    transform: skew(0.71deg);
+  }
+  5% {
+    clip: rect(25px, 9999px, 25px, 0);
+    transform: skew(0.56deg);
+  }
+  10% {
+    clip: rect(57px, 9999px, 99px, 0);
+    transform: skew(0.37deg);
+  }
+  15% {
+    clip: rect(25px, 9999px, 86px, 0);
+    transform: skew(0.16deg);
+  }
+  20% {
+    clip: rect(84px, 9999px, 100px, 0);
+    transform: skew(0.96deg);
+  }
+  25% {
+    clip: rect(46px, 9999px, 41px, 0);
+    transform: skew(0.02deg);
+  }
+  30% {
+    clip: rect(63px, 9999px, 66px, 0);
+    transform: skew(1deg);
+  }
+  35% {
+    clip: rect(98px, 9999px, 1px, 0);
+    transform: skew(0.15deg);
+  }
+  40% {
+    clip: rect(35px, 9999px, 83px, 0);
+    transform: skew(0.93deg);
+  }
+  45% {
+    clip: rect(76px, 9999px, 76px, 0);
+    transform: skew(0.57deg);
+  }
+  50% {
+    clip: rect(18px, 9999px, 18px, 0);
+    transform: skew(0.62deg);
+  }
+  55% {
+    clip: rect(35px, 9999px, 51px, 0);
+    transform: skew(0.1deg);
+  }
+  60% {
+    clip: rect(94px, 9999px, 3px, 0);
+    transform: skew(0.62deg);
+  }
+  65% {
+    clip: rect(100px, 9999px, 65px, 0);
+    transform: skew(0.93deg);
+  }
+  70% {
+    clip: rect(86px, 9999px, 82px, 0);
+    transform: skew(0.8deg);
+  }
+  75% {
+    clip: rect(27px, 9999px, 38px, 0);
+    transform: skew(0.37deg);
+  }
+  80% {
+    clip: rect(80px, 9999px, 14px, 0);
+    transform: skew(0.92deg);
+  }
+  85% {
+    clip: rect(18px, 9999px, 76px, 0);
+    transform: skew(0.11deg);
+  }
+  90% {
+    clip: rect(52px, 9999px, 54px, 0);
+    transform: skew(0.67deg);
+  }
+  95% {
+    clip: rect(20px, 9999px, 77px, 0);
+    transform: skew(0.41deg);
+  }
+  100% {
+    clip: rect(89px, 9999px, 85px, 0);
+    transform: skew(0.08deg);
+  }
+}
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(20px, 9999px, 73px, 0);
+    transform: skew(0.73deg);
+  }
+  5% {
+    clip: rect(49px, 9999px, 93px, 0);
+    transform: skew(0.64deg);
+  }
+  10% {
+    clip: rect(89px, 9999px, 49px, 0);
+    transform: skew(0.88deg);
+  }
+  15% {
+    clip: rect(74px, 9999px, 65px, 0);
+    transform: skew(0.37deg);
+  }
+  20% {
+    clip: rect(98px, 9999px, 18px, 0);
+    transform: skew(0.83deg);
+  }
+  25% {
+    clip: rect(54px, 9999px, 21px, 0);
+    transform: skew(0.49deg);
+  }
+  30% {
+    clip: rect(24px, 9999px, 83px, 0);
+    transform: skew(0.41deg);
+  }
+  35% {
+    clip: rect(3px, 9999px, 87px, 0);
+    transform: skew(0.61deg);
+  }
+  40% {
+    clip: rect(82px, 9999px, 49px, 0);
+    transform: skew(0.77deg);
+  }
+  45% {
+    clip: rect(9px, 9999px, 33px, 0);
+    transform: skew(0.11deg);
+  }
+  50% {
+    clip: rect(60px, 9999px, 46px, 0);
+    transform: skew(0.05deg);
+  }
+  55% {
+    clip: rect(50px, 9999px, 62px, 0);
+    transform: skew(0.52deg);
+  }
+  60% {
+    clip: rect(30px, 9999px, 29px, 0);
+    transform: skew(0.89deg);
+  }
+  65% {
+    clip: rect(64px, 9999px, 34px, 0);
+    transform: skew(0.59deg);
+  }
+  70% {
+    clip: rect(58px, 9999px, 21px, 0);
+    transform: skew(0.43deg);
+  }
+  75% {
+    clip: rect(63px, 9999px, 62px, 0);
+    transform: skew(0.15deg);
+  }
+  80% {
+    clip: rect(56px, 9999px, 98px, 0);
+    transform: skew(0.3deg);
+  }
+  85% {
+    clip: rect(8px, 9999px, 27px, 0);
+    transform: skew(0.89deg);
+  }
+  90% {
+    clip: rect(84px, 9999px, 54px, 0);
+    transform: skew(0.67deg);
+  }
+  95% {
+    clip: rect(49px, 9999px, 89px, 0);
+    transform: skew(1deg);
+  }
+  100% {
+    clip: rect(24px, 9999px, 42px, 0);
+    transform: skew(0.9deg);
+  }
+}
+@keyframes glitch-skew {
+  0% {
+    transform: skew(3deg);
+  }
+  10% {
+    transform: skew(1deg);
+  }
+  20% {
+    transform: skew(-2deg);
+  }
+  30% {
+    transform: skew(3deg);
+  }
+  40% {
+    transform: skew(0deg);
+  }
+  50% {
+    transform: skew(-1deg);
+  }
+  60% {
+    transform: skew(-4deg);
+  }
+  70% {
+    transform: skew(4deg);
+  }
+  80% {
+    transform: skew(-1deg);
+  }
+  90% {
+    transform: skew(4deg);
+  }
+  100% {
+    transform: skew(5deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
