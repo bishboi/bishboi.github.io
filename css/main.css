@@ -39,7 +39,7 @@ Responsive Media Elements
     a,b { font-size: 200%;
         padding: 5px 5px;}
     .demo a{
-            left: 36%;
+            left: 36vw;
         }
     .fa {
             font-size:30px !important;
@@ -58,7 +58,7 @@ Responsive Media Elements
             font-size:28px !important;
         }
         .demo a{
-            left: 38%;
+            left: 40vw;
         }
         #footer {font-size: 22px;}
         .grow p { font-size: 40%;}
@@ -72,7 +72,7 @@ Responsive Media Elements
     a,b { font-size: 150%;
         padding: 5px 5px;}
     .demo a{
-            left: 40%;
+            left: 41vw;
         }
         .fa {
             font-size:48px !important;
@@ -91,7 +91,7 @@ Responsive Media Elements
         padding: 7px 7px;}
     p1,h3 {font-size: 65%;}
     .demo a{
-        left: 41%;
+        left: 43vw;
     }
     .fa {
         font-size:60px !important;
@@ -111,7 +111,7 @@ Responsive Media Elements
         padding: 10px 11px;}
     p1,h3 {font-size: 70%;}
     .demo a{
-        left: 43%;
+        left: 45vw;
     }
     .fa {
         font-size:80px !important;
@@ -130,7 +130,7 @@ Responsive Media Elements
     a,b { font-size: 70%;
         padding: 10px 11px;}
     .demo a{
-            left: 45%;
+            left: 45vw;
         }
     .fa {
             font-size:100px !important;
@@ -151,7 +151,7 @@ Responsive Media Elements
             font-size:100px !important;
         }
     .demo a{
-            left: 48%;
+            left: 47vw;
         }
             #footer {font-size: 35px;}
 }
@@ -168,7 +168,7 @@ Responsive Media Elements
     .fa {
             font-size:100px !important;}
     .demo a{
-        left: 48%;
+        left: 47vw;
     }
     #footer {font-size: 35px;}
 }
