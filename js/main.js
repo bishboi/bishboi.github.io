@@ -1,9 +1,6 @@
 
 
-$(window).on('load',function() {
-    // Animate loader off screen
-    $(".spinner-wrapper").fadeOut("slow");;
-});
+
 
 /*scroll down-------------------------------------*/
 $(function() {
