@@ -1,7 +1,4 @@
 
-
-
-
 /*scroll down-------------------------------------*/
 $(function() {
 	$('a[href*="#"]').on("click", function(e) {
@@ -412,4 +409,3 @@ FOOOOOOOOTERRRRRRRRRRRRRRR CLOSED
 
 
   
-

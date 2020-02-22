@@ -3,10 +3,7 @@
     color: white;
 }
 /* adding fonts */
-@font-face {
-    font-family: font3;
-    src: url(../img/font7.ttf);
-}
+
 @font-face {
     font-family: font1;
     src: url(../img/font3.ttf);
@@ -89,7 +86,6 @@ Responsive Media Elements
             font-size: 20px;}    
     a,b { font-size: 110%;
         padding: 7px 7px;}
-    p1,h3 {font-size: 65%;}
     .demo a{
         left: 43vw;
     }
@@ -109,7 +105,6 @@ Responsive Media Elements
             font-size: 23px;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
-    p1,h3 {font-size: 70%;}
     .demo a{
         left: 45vw;
     }
@@ -126,7 +121,6 @@ Responsive Media Elements
     showsmall {display:none;}
     showbig {display:block;
             font-size: 30px;}
-    p1,h3 { font-size: 80%;}
     a,b { font-size: 70%;
         padding: 10px 11px;}
     .demo a{
@@ -144,7 +138,6 @@ Responsive Media Elements
     showsmall {display:none;}
     showbig {display:block;
             font-size:31px;}
-    p1,h3 {font-size: 80%;}
     a,b { font-size: 70%;
         padding: 6px 12px;}
     .fa {
@@ -294,16 +287,7 @@ Text in card
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
 */
 
-p1{
-    font-family: font3;
-    color: black;
-    font-size: 100%;
-}
-h3{
-    font-family: font3;
-    color: #211F1F;
-    font-size: 150%;
-}
+
 h4{
     font-family: font3;
 }
@@ -402,11 +386,7 @@ Footer
     margin-top: -100px;
     clear: both;
 }
-/*
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-Footer Closed 
------------------------------------------------------------------------------------------------------------------------------------------------------ 
-*/
+
 :root {
     --eye-size:8rem;
     --eye-gap:7rem;
@@ -522,9 +502,13 @@ p3 {
 p4 {
     float:right;
 }
-
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------- 
+Footer Closed 
+----------------------------------------------------------------------------------------------------------------------------------------------------- 
+*/
 /*---------------------------------------]
-terminal
+TERMINAL
 ------------------------------------*/
 
 .header-terminal {
@@ -605,6 +589,9 @@ input[type="text"] {
 /*-------------------------*/
 
 
+/* HEADER --------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------
+*/
 
 h1 {
   padding: 0;
@@ -895,7 +882,7 @@ skew to change the 'thickness' of the glitch.*/
 
 
 
-/*JSDHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFKL*/
+/*SCROLL DOWN*/
 .demo a {
     position: absolute;
     bottom: 20px;
