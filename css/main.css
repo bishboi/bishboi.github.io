@@ -42,7 +42,7 @@ Responsive Media Elements
             font-size:30px !important;
         }
         #footer {font-size: 18px;}
-}
+    }
 
 @media (min-width: 300px) {
     html { font-size: 70%;}
@@ -57,7 +57,7 @@ Responsive Media Elements
         .demo a{
             left: 40vw;
         }
-        #footer {font-size: 22px;}
+    #footer {font-size: 22px;}
         .grow p { font-size: 40%;}
     }
 
@@ -72,7 +72,7 @@ Responsive Media Elements
             left: 41vw;
         }
         .fa {
-            font-size:48px !important;
+            font-size:48px;
     }
     #footer {font-size: 25px;}
     .grow p { font-size: 50%;}
@@ -490,7 +490,7 @@ Footer
     --rotation:var(--right-upper-rotation);
     --position:var(--right-upper-position);
   }
-  p3, p4 {
+p3, p4 {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     padding: 15px 0.5%;
@@ -895,6 +895,7 @@ skew to change the 'thickness' of the glitch.*/
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
+    
   }
   .demo a:hover {
     opacity: .5;
