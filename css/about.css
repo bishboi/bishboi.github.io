@@ -231,7 +231,7 @@ SKILLS SECTION
 --------------------------------------------------*/
 /*##### SKILLS SECTION #####*/
 .skills {
-    background-color: #343a40;
+    background-color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     padding: 70px 20px;
@@ -314,76 +314,75 @@ RESPONSIVE
 -------------------------------------------------------------*/  
 
 @media screen and (min-width: 480px) {
-    .skills .content .tools-knowledge-wrapper .tools-wrapper,
-    .skills .content .tools-knowledge-wrapper .knowledge-wrapper {
-      width: 50%;
-      float: left;
-      padding: 0;
-    }
-    .skills .content .tools-knowledge-wrapper .tools-wrapper ul,
-    .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
-      margin-left: 0;
-    }
-    .skills .content .clear {
-      clear: both;
-    }
+  .skills .content .tools-knowledge-wrapper .tools-wrapper,
+  .skills .content .tools-knowledge-wrapper .knowledge-wrapper {
+    width: 50%;
+    float: left;
+    padding: 0;
   }
- @media screen and (min-width: 640px) {
-    .about-myself {
-      padding: 100px 40px;
-    }
-  
-    .skills {
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .skills .content .development-wrapper {
-      width: 600px;
-      margin: auto;
-      margin-bottom: 50px;
-    }
-    .skills .content .tools-knowledge-wrapper {
-      width: 600px;
-      margin: auto;
-    }
-  
-    .contact .content .socials {
-      width: 600px;
-      margin: auto;
-    }
-  }  
-  @media screen and (min-width: 960px) {
-    .experience .content ul li {
-      margin: 0 auto;
-    }
-    .experience .content ul li .experience-content {
-      width: 40vw;
-    }
-    .experience .content ul li:nth-child(odd) .experience-content {
-      left: 63px;
-    }
-    .experience .content ul li:nth-child(odd) .experience-content:before {
-      left: -50px;
-      width: 50px;
-    }
-    .experience .content ul li:nth-child(even) .experience-content {
-      left: calc(-40vw - 57px);
-      -webkit-border-radius: 5px 0px 5px 5px;
-      -moz-border-radius: 5px 0px 5px 5px;
-      border-radius: 5px 0px 5px 5px;
-    }
-    .experience .content ul li:nth-child(even) .experience-content:before {
-      left: auto;
-      right: -50px;
-      width: 50px;
-    }
-    .experience .content ul li:nth-child(odd) .hidden {
-      margin-left: 10vw;
-    }
-    .experience .content ul li:nth-child(even) .hidden {
-      margin-left: -10vw;
-    }
-  }    
+  .skills .content .tools-knowledge-wrapper .tools-wrapper ul,
+  .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
+    margin-left: 0;
+  }
+  .skills .content .clear {
+    clear: both;
+  }
+}
+@media screen and (min-width: 640px) {
+  .about-myself {
+    padding: 100px 40px;
+  }
+
+  .skills {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .skills .content .development-wrapper {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .skills .content .tools-knowledge-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+
+  .contact .content .socials {
+    width: 600px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 960px) {
+  .experience .content ul li {
+    margin: 0 auto;
+  }
+  .experience .content ul li .experience-content {
+    width: 40vw;
+  }
+  .experience .content ul li:nth-child(odd) .experience-content {
+    left: 63px;
+  }
+  .experience .content ul li:nth-child(odd) .experience-content:before {
+    left: -50px;
+    width: 50px;
+  }
+  .experience .content ul li:nth-child(even) .experience-content {
+    left: calc(-40vw - 57px);
+    -webkit-border-radius: 5px 0px 5px 5px;
+    -moz-border-radius: 5px 0px 5px 5px;
+    border-radius: 5px 0px 5px 5px;
+  }
+  .experience .content ul li:nth-child(even) .experience-content:before {
+    left: auto;
+    right: -50px;
+    width: 50px;
+  }
+  .experience .content ul li:nth-child(odd) .hidden {
+    margin-left: 10vw;
+  }
+  .experience .content ul li:nth-child(even) .hidden {
+    margin-left: -10vw;
+  }
 
   .skills {
     padding-left: 50px;
@@ -413,3 +412,4 @@ RESPONSIVE
   .skills .content .tools-knowledge-wrapper .tools-wrapper {
     margin-bottom: 30px;
   }
+}
