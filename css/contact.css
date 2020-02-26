@@ -116,7 +116,7 @@ form input[type="submit"] {
 }
 @media (max-width: 400px) {
     .container {
-        min-width: 300px;
+        min-width: 400px;
     }
     .contentcard p{
         font-size: 18px;
@@ -135,7 +135,7 @@ form input[type="submit"] {
 }
     @media (min-width: 700px) {
 .container {
-    min-width: 600px;
+    min-width: 700px;
 }
 .contentcard p{
     font-size: 25px;
