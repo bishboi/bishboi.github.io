@@ -1,3 +1,15 @@
+//hamburger
+function hammy() {
+    var x = document.getElementById("navbar");
+    if (x.className === "topnav") {
+      x.className = "responsive";
+      console.count(x.className);
+    } 
+    else {
+      x.className = "topnav";
+      console.count(x.className);
+    }
+  }
 
 /*scroll down-------------------------------------*/
 $(function() {

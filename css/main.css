@@ -48,7 +48,6 @@ Responsive Media Elements
             left: 40vw;
         }
     #footer {font-size: 22px;}
-    .grow p { font-size: 40%;}
     }
 
 @media (min-width: 400px) {
@@ -60,7 +59,6 @@ Responsive Media Elements
             left: 41vw;
         }
     #footer {font-size: 25px;}
-    .grow p { font-size: 50%;}
 }
 
 @media (min-width: 600px) {
@@ -73,7 +71,6 @@ Responsive Media Elements
         left: 43vw;
     }
     #footer {font-size: 28px;}
-    .grow p { font-size: 80%;}
 }
 
 @media (min-width: 800px) {
@@ -184,6 +181,7 @@ Navbar
 .hamburger {
   display: none !important;
 }
+
 @media (max-width: 600px){
   #navbar a {
     display:none;
@@ -191,8 +189,22 @@ Navbar
   .hamburger {
     display: block !important;
   }
-  .demo {
-    font-size: 10px;
+  #app h1 { 
+    font-size: 50px !important;
+  }
+  .sub {
+    font-size: 15px !important;
+  }
+  .grow p{
+    font-size: 18px !important ;
+  }
+  .responsive {position: relative;}
+  .responsive a {
+    float: none !important;
+    display: block !important;
+    text-align: right !important;
+    padding: 10px !important;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 /*
@@ -273,17 +285,8 @@ Hover animaion
 ----------------------------------------------------------------------------------------------------------------------------------------------------- 
 */
 
-.grow {
-    overflow: hidden;
-    float:center;
-}
-
-.grow2 {
-    overflow: show;
-    float:center;
-}
-
 .grow p {
+        font-size: 30px;
         font-family: 'Raleway', sans-serif;
         color: #696969;
     }
@@ -555,7 +558,7 @@ input[type="text"] {
 /*-------------------------*/
 
 
-/* HEADER --------------------------------------------------------------------------------------------------------------------------------------------------
+/* --------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------
 */
 
@@ -563,9 +566,10 @@ input[type="text"] {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 330%;
+  font-size: 80px;
 }
 #app {
+  overflow: hidden;
   background: #0a0a0a;
   height: 100vh;
   width: 100%;
@@ -589,7 +593,7 @@ input[type="text"] {
   color: #64dcdc;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1em;
-  font-size: 70%;
+  font-size: 20px;
 }
 
 
@@ -959,17 +963,3 @@ navigation
 #section06 a {
   animation: show 1.5s 1.6s ease 1 both;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
