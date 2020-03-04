@@ -1,13 +1,11 @@
 //hamburger
 function hammy() {
     var x = document.getElementById("navbar");
-    if (x.className === "topnav") {
+    if (x.className !== "responsive") {
       x.className = "responsive";
-      console.count(x.className);
     } 
     else {
       x.className = "topnav";
-      console.count(x.className);
     }
   }
 
